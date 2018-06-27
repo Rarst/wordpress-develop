@@ -69,14 +69,14 @@ class Tests_Date_I18n extends WP_UnitTestCase {
 	}
 
 	public function test_short_c_format(){
-        update_option( 'timezone_string', 'America/Regina' );
+		update_option( 'timezone_string', 'America/Regina' );
 
 		$this->assertEquals( strtotime( date( DATE_W3C ) ), strtotime( date_i18n( 'c' ) ), 'The dates should be equal', 2 );
 		$this->assertEquals( 'c', date_i18n( '\c' ) );
 	}
 
 	public function test_short_r_format(){
-        update_option( 'timezone_string', 'America/Regina' );
+		update_option( 'timezone_string', 'America/Regina' );
 
 		$this->assertEquals( strtotime( date( DATE_RFC2822 ) ), strtotime( date_i18n( 'r' ) ), 'The dates should be equal', 2 );
 		$this->assertEquals( 'r', date_i18n( '\r' ) );
