@@ -88,7 +88,7 @@ function current_time( $type, $gmt = 0 ) {
  * @param string   $dateformatstring      Format to display the date.
  * @param int|bool $timestamp_with_offset Optional. A sum of Unix timestamp and timezone offset in seconds.
  *                                        Default false.
- * @param bool     $gmt                   Optional. Whether to use GMT timezone. Default false.
+ * @param bool     $gmt                   Optional. Whether to use GMT timezone, only applies if timestamp is not provided. Default false.
  *
  * @return string The date, translated if locale specifies it.
  */
